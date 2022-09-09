@@ -15,14 +15,14 @@ class CreateTrainsTable extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
-            $table->string('Agency');
-            $table->string('Departure_station');
-            $table->string('Arrival_station');
-            $table->int('Departure_time');
-            $table->int('Departure_arrival');
-            $table->string('Code_Train');
-            $table->int('Number_carriages');
-            $table->boolean('In_time');
+            $table->string('agency');
+            $table->string('departure_station');
+            $table->string('arrival_station');
+            $table->integer('departure_time');
+            $table->integer('departure_arrival');
+            $table->string('code_Train');
+            $table->integer('number_carriages');
+            $table->boolean('in_time');
             $table->boolean('deleted');
             $table->text('post');
             $table->timestamps();
