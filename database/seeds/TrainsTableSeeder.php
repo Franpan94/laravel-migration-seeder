@@ -1,5 +1,6 @@
 <?php
 
+use App\Train;
 use Illuminate\Database\Seeder;
 
 class TrainsTableSeeder extends Seeder
@@ -144,5 +145,11 @@ class TrainsTableSeeder extends Seeder
                 'post' => 'https://upload.wikimedia.org/wikipedia/commons/2/23/Trenitalia_ETR610_4A_Venezia_SL.jpg',
             ],
         ];
+
+        foreach($trains as $train){
+            $newTrain = new Train();
+            $newTrain-> agency = $train['agency'];
+
+        }
     }
 }
