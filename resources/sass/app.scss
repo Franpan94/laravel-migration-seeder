@@ -1,1 +1,33 @@
 //
+
+@import 'partials/variables';
+
+header{
+    background-color: $bgheader;
+    height: 10vh;
+
+    a{
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+
+main{
+    background-color: $bgcard;
+}
+
+footer{
+    background-color: $bgheader;
+    height: 10vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ms_font{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+
